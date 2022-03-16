@@ -1,9 +1,11 @@
 import './App.css';
 
-function App() {
+const App = ({ todos }) => {
+  console.log('[App.js] todos: ', todos);
   return (
     <div>
-      app
+      my app
+      {/* {todos.map(todo => <p>{todo.text}</p>)} */}
     </div>
   );
 }
