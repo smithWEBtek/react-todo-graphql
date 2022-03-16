@@ -1,5 +1,3 @@
-import './App.css';
-
 const App = ({ todos }) => {
   console.log('[App.js] todos: ', todos);
   return (
