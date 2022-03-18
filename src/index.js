@@ -20,7 +20,7 @@ const client = new ApolloClient({
 });
 
 let todos;
-const getTodos = () => {
+const getTodos = async () => {
   client.query({
     query: gql`
     query {
@@ -34,11 +34,6 @@ const getTodos = () => {
   })
     // .then(result => {
     .then(result => console.log('result: ', result.data.getTodos));
-  // console.log('result: ', result.data.getTodos));
-  // todos = result.data;
-  // });
-  // console.log('[index.js] todos: ', todos);
-  // return todos;
 }
 
 getTodos();
